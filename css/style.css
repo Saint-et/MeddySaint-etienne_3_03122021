@@ -3,7 +3,12 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
+  margin: auto;
   display: flex;
   flex-direction: column;
 }
@@ -18,7 +23,7 @@ header .container_logo .logo {
   height: 2.3em;
   margin-top: 25px;
 }
-header .subtitle {
+header .location {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,8 +34,21 @@ header .subtitle {
   margin-left: -40px;
   font-weight: bold;
 }
-header .subtitle .fa-map-marker-alt {
+header .location .fa-map-marker-alt {
   margin-right: 20px;
+}
+
+.byline {
+  background: #F6F6F6;
+}
+.byline .main_title, .byline .subtitle {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+main {
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

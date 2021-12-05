@@ -1,4 +1,5 @@
 header{
+    margin: auto;
     @include flexbox_column;
 .container_logo{
     @include container_logo;
@@ -7,10 +8,10 @@ header{
         @include logo;
     }
 }
-    .subtitle{
+    .location{
         @include flexbox_center;
         align-items: center;
-        background: $light_grey;
+        background: $location_background;
         box-shadow: inset 0px 5px 5px #d9d9d9;
         height: 50px;
         font-size: 1.2em;
@@ -19,5 +20,12 @@ header{
         .fa-map-marker-alt{
             margin-right: 20px;
         }
+    }
+}
+.byline{
+    background: #F6F6F6;
+    .main_title, .subtitle{
+        @include flexbox_center;
+        margin: 10px;
     }
 }

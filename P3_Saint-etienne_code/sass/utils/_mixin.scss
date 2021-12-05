@@ -1,0 +1,19 @@
+//some flexbox//
+@mixin flexbox_column {
+  display: flex;
+  flex-direction: column;
+  }
+@mixin flexbox_center {
+  display: flex;
+  justify-content: center;
+}
+//logo of website//
+@mixin container_logo {
+  height: 80px;
+}
+@mixin logo {
+  margin: auto;
+  width: 13em;
+  height: 2.3em;
+  margin-top: 25px;
+}

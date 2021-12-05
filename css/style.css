@@ -41,10 +41,25 @@ header .location .fa-map-marker-alt {
 .byline {
   background: #F6F6F6;
 }
-.byline .main_title, .byline .subtitle {
+.byline .main_title {
+  font-weight: bold;
+}
+.byline .main_title,
+.byline .subtitle,
+.byline .container_btn {
   display: flex;
   justify-content: center;
-  margin: 10px;
+  margin: 1%;
+}
+.byline .btn_header {
+  color: #ffff;
+  font-weight: bold;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 50px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 5px 5px #d9d9d9;
 }
 
 main {

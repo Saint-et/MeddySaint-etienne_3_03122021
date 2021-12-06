@@ -6,5 +6,10 @@
     padding-right: 20px;
     border-radius: 50px;
     background: linear-gradient($secondary, $primary);
-    box-shadow: 0px 5px 5px #d9d9d9;
+    box-shadow: 0px 5px 5px $color_shadow_border;
+}
+@mixin botton_hover {
+    transition: 1.0s;
+    background: linear-gradient(lighten($secondary, 5%), lighten($primary, 5%));
+    box-shadow: 0px 5px 5px darken($color_shadow_border, 20%);
 }

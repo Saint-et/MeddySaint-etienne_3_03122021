@@ -1,23 +1,43 @@
 header{
     @include flexbox_column;
-.container_logo{
+    .container_logo{
     @include container_logo;
     .logo{
         @include flexbox_center;
         @include logo;
     }
 }
-    .subtitle{
+    .location{
         @include flexbox_center;
         align-items: center;
-        background: $light_grey;
-        box-shadow: inset 0px 5px 5px #d9d9d9;
+        background: $location_background;
+        box-shadow: inset 0px 5px 5px $color_shadow_border;
         height: 50px;
         font-size: 1.2em;
         margin-left: -40px;
         font-weight: bold;
         .fa-map-marker-alt{
             margin-right: 20px;
+        }
+    }
+    .byline{
+        background: #F6F6F6;
+        height: auto;
+        padding-bottom: 50px;
+        .main_title{
+            font-weight: bold;
+        }
+        .main_title,
+        .subtitle,
+        .container_btn{
+            @include flexbox_center;
+            margin: 15px;
+        }
+        .btn_header{
+            @include botton;
+        }
+        .btn_header:hover{
+            @include botton_hover;
         }
     }
 }

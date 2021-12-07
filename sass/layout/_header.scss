@@ -1,6 +1,9 @@
 header{
     @include flexbox_column;
     .container_logo{
+        .fa-arrow-left{
+            display: none
+        }
     @include container_logo;
     .logo{
         @include flexbox_center;
@@ -13,31 +16,98 @@ header{
         background: $location_background;
         box-shadow: inset 0px 5px 5px $color_shadow_border;
         height: 50px;
-        font-size: 1.2em;
-        margin-left: -40px;
+        font-size: 16px;
+        margin-left: -20px;
         font-weight: bold;
         .fa-map-marker-alt{
             margin-right: 20px;
         }
     }
     .byline{
-        background: #F6F6F6;
+        background: $ligh_grey;
         height: auto;
-        padding-bottom: 50px;
+        padding-bottom: 40px;
+        padding-top: 20px;
         .main_title{
+            font-size: 1.3em;
             font-weight: bold;
+            margin-left: 15%;
+            margin-right: 15%;
+            text-align: center;
+        }
+        .subtitle{
+            font-size: 1.0em;
+            margin-left: 10%;
+            margin-right: 10%;
+            text-align: center;
         }
         .main_title,
         .subtitle,
         .container_btn{
-            @include flexbox_center;
-            margin: 15px;
+        @include flexbox_center;
         }
         .btn_header{
-            @include botton;
+            font-size: 14px;
+            @include main_botton;
         }
         .btn_header:hover{
-            @include botton_hover;
+            @include main_botton--hover;
         }
+    }
+    nav{
+        @include flexbox_center;
+    }
+    .container_filter{
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 100%;
+        min-width: 270px;
+        max-width: 300px;
+    }
+    .filter_title{
+        @include flexbox_center;
+        justify-content: flex-start;
+        font-size: 1.2em;
+        margin-left: -10px;
+        
+    }
+    .container_btn--filter{
+        font-size: 13px;
+        margin-top: 20px;
+    
+        .btn_filter{
+            @include flexbox_align;
+            background: $ligh_grey;
+            font-weight: bold;
+            height: 60px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 5px $color_shadow_border;
+
+            .btn_filter--notation{
+                color: #ffff;
+                position: relative;
+                background: $primary;
+                border-radius: 100%;
+                left: -10px;
+                padding: 4px;
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+            .icon_filter{
+                color: $icon; 
+                margin-right: 8%;
+                font-size: 16px;
+            }
+        }
+    }
+    .fa-mobile-alt{
+        margin-left: 5px;
+        padding-right: 8px;
+    }
+    .btn_filter--text{
+        width: 100%;
+    }
+    .btn_filter:hover{
+        @include effect_botton--hover;
     }
 }

@@ -1,3 +1,29 @@
 main{
-    
+    @include flexbox_center;
+    flex-direction: column;
+    width: 100%;
+article{
+    width: 60%;
+    margin: auto;
+}
+.container_card{
+    @include flexbox_column;
+    width: 100%;
+}
+.card_restaurant{
+    @include flexbox_column;
+    @include border_shadow;
+    border-radius: 10px;
+    margin: 1%;
+    height: 250px;
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+    .card_restaurant--img{
+        border-radius: 10px 10px 0px 0px;
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
 }

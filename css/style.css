@@ -67,12 +67,6 @@ header .byline .container_main--btn {
   display: flex;
   justify-content: center;
 }
-header .byline .main--btn:hover {
-  cursor: pointer;
-  transition: 1s;
-  background: linear-gradient(#ff93e1, #a16be0);
-  box-shadow: 0px 5px 5px #8d8d8d;
-}
 header .byline .main--btn {
   font-size: 14px;
   color: #ffff;
@@ -83,6 +77,12 @@ header .byline .main--btn {
   border-radius: 50px;
   background: linear-gradient(#ff79da, #9356dc);
   box-shadow: 0px 5px 5px #d9d9d9;
+}
+header .byline .main--btn:hover {
+  cursor: pointer;
+  transition: 1s;
+  background: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: 0px 5px 5px #8d8d8d;
 }
 header nav {
   display: flex;

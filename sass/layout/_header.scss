@@ -50,12 +50,12 @@ header {
     .container_main--btn {
       @include flexbox_center;
     }
-    .main--btn:hover {
-      @include main_botton--hover;
-    }
     .main--btn {
       font-size: 14px;
       @include main_botton;
+    }
+    .main--btn:hover {
+      @include main_botton--hover;
     }
   }
   //filters//

@@ -1,29 +1,80 @@
-main{
-    @include flexbox_center;
-    flex-direction: column;
+main {
+  @include flexbox_center;
+  background: $ligh_grey_background;
+  margin-top: 50px;
+  //restaurant//
+  #contaiter_restaurant {
+    margin: 40px 20px 20px 20px;
     width: 100%;
-article{
-    width: 60%;
-    margin: auto;
-}
-.container_card{
-    @include flexbox_column;
-    width: 100%;
-}
-.card_restaurant{
-    @include flexbox_column;
-    @include border_shadow;
-    border-radius: 10px;
-    margin: 1%;
-    height: 250px;
-    width: 48%;
-    display: flex;
-    justify-content: space-between;
-    .card_restaurant--img{
+    max-width: 480px;
+
+    .article_title--restaurant {
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    //cards_restaurant//
+    .container_card--restaurant {
+      @include flexbox_column;
+    }
+    .card_restaurant:hover {
+      @include card_effect--hover;
+      background: none;
+    }
+    .card_restaurant {
+      @include flexbox_column;
+      @include border_shadow;
+      border-radius: 10px;
+      height: 250px;
+      width: 100%;
+      margin-bottom: 20px;
+      .card_restaurant--img {
         border-radius: 10px 10px 0px 0px;
-        height: 200px;
+        height: 180px;
         width: 100%;
         object-fit: cover;
+      }
+      //message_new//
+      .container_new--message {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 15px;
+      }
+      .text_new--message {
+        position: absolute;
+        text-align: center;
+        font-size: 1em;
+        padding: 10px;
+        color: darken($tertiary, 40%);
+        background: $tertiary;
+        border-radius: 3px;
+      }
+      //text_card//
+      .container_text--card {
+        display: flex;
+        justify-content: space-between;
+        margin: 15px 10px 0px 10px;
+
+        .title_card--restaurant {
+          margin-top: 0px;
+          font-size: 1em;
+        }
+        .text_card--restaurant {
+          margin-top: -10px;
+          font-size: 1em;
+        }
+        .heart-full:hover {
+          @include heart_full_hover;
+        }
+        .heart-full {
+          @include heart_full_transparent;
+          margin-right: 10px;
+        }
+        .heart-empty {
+          @include heart_empty;
+          margin-right: -30px;
+          margin-top: -2px;
+        }
+      }
     }
-}
+  }
 }

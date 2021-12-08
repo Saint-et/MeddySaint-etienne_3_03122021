@@ -31,18 +31,19 @@ header .location {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #EAEAEA;
+  background: #eaeaea;
   box-shadow: inset 0px 5px 5px #d9d9d9;
   height: 50px;
   font-size: 16px;
   margin-left: -20px;
   font-weight: bold;
+  color: #505050;
 }
 header .location .fa-map-marker-alt {
   margin-right: 20px;
 }
 header .byline {
-  background: #F6F6F6;
+  background: #f6f6f6;
   height: auto;
   padding-bottom: 40px;
   padding-top: 20px;
@@ -62,11 +63,17 @@ header .byline .subtitle {
 }
 header .byline .main_title,
 header .byline .subtitle,
-header .byline .container_btn {
+header .byline .container_main--btn {
   display: flex;
   justify-content: center;
 }
-header .byline .btn_header {
+header .byline .main--btn:hover {
+  cursor: pointer;
+  transition: 1s;
+  background: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: 0px 5px 5px #8d8d8d;
+}
+header .byline .main--btn {
   font-size: 14px;
   color: #ffff;
   font-weight: bold;
@@ -74,103 +81,157 @@ header .byline .btn_header {
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 50px;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ff79da, #9356dc);
   box-shadow: 0px 5px 5px #d9d9d9;
-}
-header .byline .btn_header:hover {
-  transition: 1s;
-  background: linear-gradient(#ff93e1, #a16be0);
-  box-shadow: 0px 5px 5px #a6a6a6;
 }
 header nav {
   display: flex;
   justify-content: center;
 }
-header .container_filter {
-  margin-left: 20%;
-  margin-right: 20%;
+header nav .container_filter {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 30px;
   width: 100%;
-  min-width: 270px;
-  max-width: 300px;
+  max-width: 480px;
 }
-header .filter_title {
+header nav .container_filter .filter_title {
   display: flex;
   justify-content: center;
   justify-content: flex-start;
   font-size: 1.2em;
   margin-left: -10px;
 }
-header .container_btn--filter {
+header nav .container_filter .container_btn--filter {
   font-size: 13px;
   margin-top: 20px;
 }
-header .container_btn--filter .btn_filter {
+header nav .container_filter .container_btn--filter .btn_filter--text {
+  width: 100%;
+}
+header nav .container_filter .container_btn--filter .btn_filter:hover {
+  transition: 0.5s;
+  background: #f2eafb;
+  box-shadow: 5px 5px 5px #cccccc;
+}
+header nav .container_filter .container_btn--filter .btn_filter {
   display: flex;
   align-items: center;
-  background: #F6F6F6;
+  background: #f6f6f6;
   font-weight: bold;
   height: 60px;
   border-radius: 15px;
   box-shadow: 0px 5px 5px #d9d9d9;
 }
-header .container_btn--filter .btn_filter .btn_filter--notation {
+header nav .container_filter .container_btn--filter .btn_filter .btn_filter--notation {
   color: #ffff;
   position: relative;
-  background: #9356DC;
+  background: #9356dc;
   border-radius: 100%;
   left: -10px;
   padding: 4px;
   padding-left: 8px;
   padding-right: 8px;
 }
-header .container_btn--filter .btn_filter .icon_filter {
-  color: grey;
+header nav .container_filter .container_btn--filter .btn_filter .icon_filter {
+  color: gray;
   margin-right: 8%;
   font-size: 16px;
 }
-header .fa-mobile-alt {
-  margin-left: 5px;
-  padding-right: 8px;
-}
-header .btn_filter--text {
-  width: 100%;
-}
-header .btn_filter:hover {
-  transition: 0.5s;
-  background: #f2eafb;
+header nav .container_filter .container_btn--filter .btn_filter .icon_filter .fa-mobile-alt {
+  margin-left: 4px;
+  padding-right: 2px;
 }
 
 main {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  background: #f6f6f6;
+  margin-top: 50px;
+}
+main #contaiter_restaurant {
+  margin: 40px 20px 20px 20px;
   width: 100%;
+  max-width: 480px;
 }
-main article {
-  width: 60%;
-  margin: auto;
+main #contaiter_restaurant .article_title--restaurant {
+  font-weight: bold;
+  font-size: 1.2em;
 }
-main .container_card {
+main #contaiter_restaurant .container_card--restaurant {
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
-main .card_restaurant {
+main #contaiter_restaurant .card_restaurant:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+  transition: 0.1s;
+  background: #f2eafb;
+  box-shadow: 0px 5px 5px #cccccc;
+  background: none;
+}
+main #contaiter_restaurant .card_restaurant {
   display: flex;
   flex-direction: column;
   box-shadow: 0px 5px 5px #d9d9d9;
   border-radius: 10px;
-  margin: 1%;
   height: 250px;
-  width: 48%;
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
 }
-main .card_restaurant .card_restaurant--img {
+main #contaiter_restaurant .card_restaurant .card_restaurant--img {
   border-radius: 10px 10px 0px 0px;
-  height: 200px;
+  height: 180px;
   width: 100%;
   object-fit: cover;
+}
+main #contaiter_restaurant .card_restaurant .container_new--message {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 15px;
+}
+main #contaiter_restaurant .card_restaurant .text_new--message {
+  position: absolute;
+  text-align: center;
+  font-size: 1em;
+  padding: 10px;
+  color: #278870;
+  background: #99e2d0;
+  border-radius: 3px;
+}
+main #contaiter_restaurant .card_restaurant .container_text--card {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 10px 0px 10px;
+}
+main #contaiter_restaurant .card_restaurant .container_text--card .title_card--restaurant {
+  margin-top: 0px;
+  font-size: 1em;
+}
+main #contaiter_restaurant .card_restaurant .container_text--card .text_card--restaurant {
+  margin-top: -10px;
+  font-size: 1em;
+}
+main #contaiter_restaurant .card_restaurant .container_text--card .heart-full:hover {
+  cursor: pointer;
+  transition: 2s;
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main #contaiter_restaurant .card_restaurant .container_text--card .heart-full {
+  font-size: 2em;
+  background: -webkit-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 10px;
+}
+main #contaiter_restaurant .card_restaurant .container_text--card .heart-empty {
+  font-size: 1.8em;
+  margin-right: -30px;
+  margin-top: -2px;
 }
 
 /*# sourceMappingURL=style.css.map */

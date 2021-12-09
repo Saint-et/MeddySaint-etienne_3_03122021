@@ -1,14 +1,14 @@
 header {
   @include flexbox_column;
+  background: $ligh_grey_background;
   //logo//
   .container_logo {
-    .fa-arrow-left {
-      display: none;
-    }
     @include container_logo;
+    color: $text_page_color;
     .logo {
       @include flexbox_center;
       @include logo;
+      @include title_font-family;
     }
   }
   //location//
@@ -32,6 +32,7 @@ header {
     height: auto;
     padding-bottom: 40px;
     padding-top: 20px;
+    color: $text_page_color;
     .main_title {
       font-size: 1.3em;
       font-weight: bold;
@@ -61,6 +62,8 @@ header {
   //filters//
   nav {
     @include flexbox_center;
+    background: $white;
+    padding-bottom: 50px;
 
     .container_filter {
       margin-left: 5%;
@@ -68,6 +71,7 @@ header {
       margin-top: 30px;
       width: 100%;
       max-width: 480px;
+      color: $text_page_color;
 
       .filter_title {
         @include flexbox_center;
@@ -84,11 +88,12 @@ header {
           width: 100%;
         }
         .btn_filter:hover {
-          @include effect_botton--hover;
+          @include effect_with_background--hover;
         }
         .btn_filter {
+          opacity: 1;
           @include flexbox_align;
-          background: $filter_background;
+          background: $ligh_grey_background;
           font-weight: bold;
           height: 60px;
           border-radius: 15px;

@@ -15,17 +15,8 @@
   display: flex;
   align-items: center;
 }
-//logo of website//
-@mixin container_logo {
-  display: flex;
-  height: 70px;
-}
-@mixin logo {
-  margin: auto;
-  width: 11em;
-  height: 1.9em;
-  margin-top: 25px;
-}
+
+
 //shadow//
 @mixin border_shadow {
   box-shadow: 0px 5px 5px $color_shadow_border;

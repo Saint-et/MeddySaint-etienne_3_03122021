@@ -1,0 +1,13 @@
+//rule_on_boddy//
+body {
+  margin: auto;
+  @include body_font-family;
+
+  a {
+    text-decoration: none;
+    color: $text_page_color;
+  }
+  ul {
+    list-style: none;
+  }
+}

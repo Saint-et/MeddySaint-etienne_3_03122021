@@ -1,7 +1,7 @@
 main {
   @include flexbox_center;
   background: $ligh_grey_background;
-  margin-top: 50px;
+  padding-bottom: 20px;
   //restaurant//
   #contaiter_restaurant {
     margin: 40px 20px 20px 20px;
@@ -11,22 +11,24 @@ main {
     .article_title--restaurant {
       font-weight: bold;
       font-size: 1.2em;
+      color: $text_page_color;
     }
     //cards_restaurant//
     .container_card--restaurant {
       @include flexbox_column;
     }
     .card_restaurant:hover {
-      @include card_effect--hover;
-      background: none;
+      @include scale_effect--hover;
+      @include effect_without_background--hover;
     }
     .card_restaurant {
       @include flexbox_column;
       @include border_shadow;
       border-radius: 10px;
-      height: 250px;
+      height: 255px;
       width: 100%;
       margin-bottom: 20px;
+      background: $white;
       .card_restaurant--img {
         border-radius: 10px 10px 0px 0px;
         height: 180px;
@@ -53,6 +55,7 @@ main {
         display: flex;
         justify-content: space-between;
         margin: 15px 10px 0px 10px;
+        color: $text_page_color;
 
         .title_card--restaurant {
           margin-top: 0px;
@@ -71,7 +74,7 @@ main {
         }
         .heart-empty {
           @include heart_empty;
-          margin-right: -30px;
+          margin-right: -30.5px;
           margin-top: -2px;
         }
       }

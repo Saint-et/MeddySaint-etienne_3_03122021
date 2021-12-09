@@ -1,0 +1,8 @@
+//font_on_the_whole_page//
+@mixin body_font-family {
+  font-family: "Roboto", sans-serif;
+}
+//font_title//
+@mixin title_font-family {
+  font-family: "Shrikhand", sans-serif;
+}

@@ -6,12 +6,12 @@ footer {
   .container_footer {
     margin: 0px 20px 0px 20px;
     width: 100%;
-    max-width: 490px;
+    max-width: 1024px;
     //title_footer//
     .title_footer {
       font-size: 1.4em;
       @include title_font-family;
-      color: #ffff;
+      color: $text_footer;
     }
     //text_footer//
     .footer_container--text {
@@ -25,7 +25,7 @@ footer {
         margin-bottom: 10px;
         width: max-content;
         .footer_text--content {
-          color: #ffff;
+          color: $text_footer;
           .icon_footer--hand,
           .icon_footer {
             width: 30px;
@@ -37,5 +37,16 @@ footer {
         }
       }
     }
+  }
+}
+@media all and (min-width: 660px) {
+  .title_footer {
+    @include flexbox_center;
+    margin-bottom: 30px;
+  }
+  .footer_container--text {
+    @include flexbox_center;
+    justify-content: space-around;
+    flex-direction: row;
   }
 }

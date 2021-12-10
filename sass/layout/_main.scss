@@ -6,28 +6,26 @@ main {
   #contaiter_restaurant {
     margin: 40px 20px 20px 20px;
     width: 100%;
-    max-width: 480px;
+    max-width: 1024px;
 
     .article_title--restaurant {
-      font-weight: bold;
       font-size: 1.2em;
+      font-weight: bolder;
       color: $text_page_color;
     }
     //cards_restaurant//
     .container_card--restaurant {
-      @include flexbox_column;
+      width: 100%;
     }
     .card_restaurant:hover {
       @include scale_effect--hover;
       @include effect_without_background--hover;
     }
     .card_restaurant {
-      @include flexbox_column;
       @include border_shadow;
       border-radius: 10px;
-      height: 255px;
-      width: 100%;
       margin-bottom: 20px;
+      height: 255px;
       background: $white;
       .card_restaurant--img {
         border-radius: 10px 10px 0px 0px;
@@ -78,6 +76,22 @@ main {
           margin-top: -2px;
         }
       }
+    }
+  }
+}
+@media all and (min-width: 769px) {
+  .article_title--restaurant {
+    @include flexbox_center;
+    margin-bottom: 50px;
+  }
+  .container_card--restaurant {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+
+    .card_restaurant {
+      width: 48%;
     }
   }
 }

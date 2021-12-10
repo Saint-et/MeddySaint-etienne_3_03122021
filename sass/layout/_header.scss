@@ -29,10 +29,10 @@ header {
   //title-subtitle-botton//
   .byline {
     background: $ligh_grey_background;
-    height: auto;
     padding-bottom: 40px;
     padding-top: 20px;
     color: $text_page_color;
+
     .main_title {
       font-size: 1.3em;
       font-weight: bold;
@@ -70,12 +70,10 @@ header {
       margin-right: 5%;
       margin-top: 30px;
       width: 100%;
-      max-width: 480px;
+      max-width: 1024px;
       color: $text_page_color;
 
       .filter_title {
-        @include flexbox_center;
-        justify-content: flex-start;
         font-size: 1.2em;
         margin-left: -10px;
       }
@@ -121,6 +119,23 @@ header {
           }
         }
       }
+    }
+  }
+}
+@media all and (min-width: 769px) {
+  .filter_title {
+    @include flexbox_center;
+  }
+  .filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .container_btn--filter {
+      width: 30%;
+      min-width: 220px;
+      margin-left: -4%;
+      margin-right: -4%;
     }
   }
 }

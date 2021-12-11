@@ -15,12 +15,31 @@ header {
   flex-direction: column;
   background: #F6F6F6;
 }
-header .container_logo {
+
+.container_logo {
   display: flex;
   height: 70px;
   color: #000;
+  align-items: center;
 }
-header .container_logo .logo {
+
+.btn_return {
+  font-size: 1.3em;
+  margin-left: 10px;
+  height: max-content;
+  padding: 5px;
+}
+
+.btn_return:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  opacity: 0.9;
+  box-shadow: 5px 5px 5px #d4d4d4;
+  box-shadow: none;
+  transform: scale(1.2);
+}
+
+.logo {
   display: flex;
   justify-content: center;
   margin: auto;
@@ -28,7 +47,8 @@ header .container_logo .logo {
   margin-top: 15px;
   font-family: "Shrikhand", sans-serif;
 }
-header .location {
+
+.location {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,60 +60,70 @@ header .location {
   font-weight: bold;
   color: #505050;
 }
-header .location .fa-map-marker-alt {
+
+.fa-map-marker-alt {
   margin-right: 20px;
 }
-header .byline {
+
+.byline {
   background: #F6F6F6;
   padding-bottom: 40px;
   padding-top: 20px;
   color: #000;
 }
-header .byline .main_title {
+
+.main_title {
   font-size: 1.3em;
   font-weight: bold;
   margin-left: 15%;
   margin-right: 15%;
   text-align: center;
 }
-header .byline .subtitle {
+
+.subtitle {
   font-size: 1em;
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
 }
-header .byline .main_title,
-header .byline .subtitle,
-header .byline .container_main--btn {
+
+.main_title,
+.subtitle,
+.container_main--btn {
   display: flex;
   justify-content: center;
 }
-header .byline .main--btn {
+
+.main--btn {
+  padding-left: 20px;
+  padding-right: 20px;
   font-size: 14px;
   opacity: 1;
   color: #ffff;
   font-weight: bold;
-  padding: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border-radius: 50px;
   background: linear-gradient(#ff79da, #9356dc);
   box-shadow: 0px 0px 10px 0px #d9d9d9;
 }
-header .byline .main--btn:hover {
+
+.main--btn:hover {
   cursor: pointer;
   opacity: 0.8;
   transition: 0.5s;
   background: linear-gradient(#ff93e1, #a16be0);
   box-shadow: 0px 0px 10px 0px #8d8d8d;
 }
-header nav {
+
+nav {
   display: flex;
   justify-content: center;
   background: #ffff;
   padding-bottom: 50px;
 }
-header nav .container_filter {
+
+.container_filter {
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 30px;
@@ -101,35 +131,41 @@ header nav .container_filter {
   max-width: 1024px;
   color: #000;
 }
-header nav .container_filter .filter_title {
+
+.filter_title {
   font-size: 1.2em;
   margin-left: -10px;
 }
-header nav .container_filter .container_btn--filter {
+
+.container_btn--filter {
   font-size: 13px;
   margin-top: 20px;
 }
-header nav .container_filter .container_btn--filter .btn_filter--text {
+
+.btn_filter--text {
   width: 100%;
 }
-header nav .container_filter .container_btn--filter .btn_filter:hover {
+
+.btn_filter:hover {
   cursor: pointer;
   transition: 0.5s;
   opacity: 0.9;
   background: #f2eafb;
   box-shadow: 5px 5px 5px #d4d4d4;
 }
-header nav .container_filter .container_btn--filter .btn_filter {
+
+.btn_filter {
   opacity: 1;
+  height: 60px;
   display: flex;
   align-items: center;
   background: #F6F6F6;
   font-weight: bold;
-  height: 60px;
   border-radius: 15px;
   box-shadow: 0px 5px 5px #d9d9d9;
 }
-header nav .container_filter .container_btn--filter .btn_filter .btn_filter--notation {
+
+.btn_filter--notation {
   color: #ffff;
   position: relative;
   background: #9356dc;
@@ -139,12 +175,14 @@ header nav .container_filter .container_btn--filter .btn_filter .btn_filter--not
   padding-left: 8px;
   padding-right: 8px;
 }
-header nav .container_filter .container_btn--filter .btn_filter .icon_filter {
+
+.icon_filter {
   color: gray;
   margin-right: 8%;
   font-size: 16px;
 }
-header nav .container_filter .container_btn--filter .btn_filter .icon_filter .fa-mobile-alt {
+
+.fa-mobile-alt {
   margin-left: 4px;
   padding-right: 2px;
 }
@@ -173,45 +211,53 @@ main {
   background: #F6F6F6;
   padding-bottom: 20px;
 }
-main #contaiter_restaurant {
+
+#contaiter_restaurant {
   margin: 40px 20px 20px 20px;
   width: 100%;
   max-width: 1024px;
 }
-main #contaiter_restaurant .article_title--restaurant {
+
+.article_title--restaurant {
   font-size: 1.2em;
   font-weight: bolder;
   color: #000;
 }
-main #contaiter_restaurant .container_card--restaurant {
+
+.container_card--restaurant {
   width: 100%;
 }
-main #contaiter_restaurant .card_restaurant:hover {
+
+.card_restaurant:hover {
   transform: scale(1.01);
   cursor: pointer;
   transition: 0.5s;
   opacity: 0.9;
   box-shadow: 5px 5px 5px #d4d4d4;
 }
-main #contaiter_restaurant .card_restaurant {
+
+.card_restaurant {
   box-shadow: 0px 5px 5px #d9d9d9;
   border-radius: 10px;
   margin-bottom: 20px;
   height: 255px;
   background: #ffff;
 }
-main #contaiter_restaurant .card_restaurant .card_restaurant--img {
+
+.card_restaurant--img {
   border-radius: 10px 10px 0px 0px;
   height: 180px;
   width: 100%;
   object-fit: cover;
 }
-main #contaiter_restaurant .card_restaurant .container_new--message {
+
+.container_new--message {
   display: flex;
   flex-direction: row-reverse;
   margin-right: 15px;
 }
-main #contaiter_restaurant .card_restaurant .text_new--message {
+
+.text_new--message {
   position: absolute;
   text-align: center;
   font-size: 1em;
@@ -220,21 +266,25 @@ main #contaiter_restaurant .card_restaurant .text_new--message {
   background: #99e2d0;
   border-radius: 3px;
 }
-main #contaiter_restaurant .card_restaurant .container_text--card {
+
+.container_text--card {
   display: flex;
   justify-content: space-between;
   margin: 15px 10px 0px 10px;
   color: #000;
 }
-main #contaiter_restaurant .card_restaurant .container_text--card .title_card--restaurant {
+
+.title_card--restaurant {
   margin-top: 0px;
   font-size: 1em;
 }
-main #contaiter_restaurant .card_restaurant .container_text--card .text_card--restaurant {
+
+.text_card--restaurant {
   margin-top: -10px;
   font-size: 1em;
 }
-main #contaiter_restaurant .card_restaurant .container_text--card .heart-full:hover {
+
+.heart-full:hover {
   cursor: pointer;
   transition: 0.5s;
   transform: scale(1.05);
@@ -244,7 +294,8 @@ main #contaiter_restaurant .card_restaurant .container_text--card .heart-full:ho
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-main #contaiter_restaurant .card_restaurant .container_text--card .heart-full {
+
+.heart-full {
   font-size: 2em;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
   opacity: 0;
@@ -253,7 +304,8 @@ main #contaiter_restaurant .card_restaurant .container_text--card .heart-full {
   -webkit-text-fill-color: transparent;
   margin-right: 10px;
 }
-main #contaiter_restaurant .card_restaurant .container_text--card .heart-empty {
+
+.heart-empty {
   font-size: 1.8em;
   margin-right: -30.5px;
   margin-top: -2px;
@@ -283,36 +335,44 @@ footer {
   display: flex;
   justify-content: center;
 }
-footer .container_footer {
+
+.container_footer {
   margin: 0px 20px 0px 20px;
   width: 100%;
   max-width: 1024px;
 }
-footer .container_footer .title_footer {
+
+.title_footer {
   font-size: 1.4em;
   font-family: "Shrikhand", sans-serif;
   color: #ffff;
 }
-footer .container_footer .footer_container--text {
+
+.footer_container--text {
   margin-left: -40px;
 }
-footer .container_footer .footer_container--text .footer_text:hover {
+
+.footer_text:hover {
   transition: 0.5s;
   text-decoration: underline;
   transform: scale(0.98);
 }
-footer .container_footer .footer_container--text .footer_text {
+
+.footer_text {
   margin-bottom: 10px;
   width: max-content;
 }
-footer .container_footer .footer_container--text .footer_text .footer_text--content {
+
+.footer_text--content {
   color: #ffff;
 }
-footer .container_footer .footer_container--text .footer_text .footer_text--content .icon_footer--hand,
-footer .container_footer .footer_container--text .footer_text .footer_text--content .icon_footer {
+
+.icon_footer--hand,
+.icon_footer {
   width: 30px;
 }
-footer .container_footer .footer_container--text .footer_text .footer_text--content .icon_footer--hand {
+
+.icon_footer--hand {
   font-size: 14px;
   transform: rotate(-45deg);
 }
@@ -332,4 +392,4 @@ footer .container_footer .footer_container--text .footer_text .footer_text--cont
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main_style.css.map */

@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+    "sass": "sass --watch ./sass:./css",
+    "prefix": "postcss ./css --use autoprefixer -d ./css"
   },
   "author": "",
   "license": "ISC",

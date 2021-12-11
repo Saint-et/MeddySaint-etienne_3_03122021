@@ -2,83 +2,83 @@ main {
   @include flexbox_center;
   background: $ligh_grey_background;
   padding-bottom: 20px;
-  //restaurant//
-  #contaiter_restaurant {
-    margin: 40px 20px 20px 20px;
-    width: 100%;
-    max-width: 1024px;
-
-    .article_title--restaurant {
-      font-size: 1.2em;
-      font-weight: bolder;
-      color: $text_page_color;
-    }
-    //cards_restaurant//
-    .container_card--restaurant {
-      width: 100%;
-    }
-    .card_restaurant:hover {
-      @include scale_effect--hover;
-      @include effect_without_background--hover;
-    }
-    .card_restaurant {
-      @include border_shadow;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      height: 255px;
-      background: $white;
-      .card_restaurant--img {
-        border-radius: 10px 10px 0px 0px;
-        height: 180px;
-        width: 100%;
-        object-fit: cover;
-      }
-      //message_new//
-      .container_new--message {
-        display: flex;
-        flex-direction: row-reverse;
-        margin-right: 15px;
-      }
-      .text_new--message {
-        position: absolute;
-        text-align: center;
-        font-size: 1em;
-        padding: 10px;
-        color: darken($tertiary, 40%);
-        background: $tertiary;
-        border-radius: 3px;
-      }
-      //text_card//
-      .container_text--card {
-        display: flex;
-        justify-content: space-between;
-        margin: 15px 10px 0px 10px;
-        color: $text_page_color;
-
-        .title_card--restaurant {
-          margin-top: 0px;
-          font-size: 1em;
-        }
-        .text_card--restaurant {
-          margin-top: -10px;
-          font-size: 1em;
-        }
-        .heart-full:hover {
-          @include heart_full_hover;
-        }
-        .heart-full {
-          @include heart_full_transparent;
-          margin-right: 10px;
-        }
-        .heart-empty {
-          @include heart_empty;
-          margin-right: -30.5px;
-          margin-top: -2px;
-        }
-      }
-    }
-  }
 }
+//restaurant//
+#contaiter_restaurant {
+  margin: 40px 20px 20px 20px;
+  width: 100%;
+  max-width: 1024px;
+}
+.article_title--restaurant {
+  font-size: 1.2em;
+  font-weight: bolder;
+  color: $text_page_color;
+}
+//cards_restaurant//
+.container_card--restaurant {
+  width: 100%;
+}
+.card_restaurant:hover {
+  @include scale_effect--hover;
+  @include effect_without_background--hover;
+}
+.card_restaurant {
+  @include border_shadow;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  height: 255px;
+  background: $white;
+}
+.card_restaurant--img {
+  border-radius: 10px 10px 0px 0px;
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+}
+//message_new//
+.container_new--message {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 15px;
+}
+.text_new--message {
+  position: absolute;
+  text-align: center;
+  font-size: 1em;
+  padding: 10px;
+  color: darken($tertiary, 40%);
+  background: $tertiary;
+  border-radius: 3px;
+}
+//text_card//
+.container_text--card {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 10px 0px 10px;
+  color: $text_page_color;
+}
+
+.title_card--restaurant {
+  margin-top: 0px;
+  font-size: 1em;
+}
+.text_card--restaurant {
+  margin-top: -10px;
+  font-size: 1em;
+}
+.heart-full:hover {
+  @include heart_full_hover;
+}
+.heart-full {
+  @include heart_full_transparent;
+  margin-right: 10px;
+}
+.heart-empty {
+  @include heart_empty;
+  margin-right: -30.5px;
+  margin-top: -2px;
+}
+//media_querie//
 @media all and (min-width: 769px) {
   .article_title--restaurant {
     @include flexbox_center;

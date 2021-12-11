@@ -1,127 +1,135 @@
 header {
   @include flexbox_column;
   background: $ligh_grey_background;
-  //logo//
-  .container_logo {
-    @include container_logo;
-    color: $text_page_color;
-    .logo {
-      @include flexbox_center;
-      @include logo;
-      @include title_font-family;
-    }
-  }
-  //location//
-  .location {
-    @include flexbox_center;
-    align-items: center;
-    background: $location_background;
-    box-shadow: inset 0px 5px 5px $color_shadow_border;
-    height: 50px;
-    font-size: 16px;
-    margin-left: -20px;
-    font-weight: bold;
-    color: $color_text_location;
-    .fa-map-marker-alt {
-      margin-right: 20px;
-    }
-  }
-  //title-subtitle-botton//
-  .byline {
-    background: $ligh_grey_background;
-    padding-bottom: 40px;
-    padding-top: 20px;
-    color: $text_page_color;
-
-    .main_title {
-      font-size: 1.3em;
-      font-weight: bold;
-      margin-left: 15%;
-      margin-right: 15%;
-      text-align: center;
-    }
-    .subtitle {
-      font-size: 1em;
-      margin-left: 10%;
-      margin-right: 10%;
-      text-align: center;
-    }
-    .main_title,
-    .subtitle,
-    .container_main--btn {
-      @include flexbox_center;
-    }
-    .main--btn {
-      font-size: 14px;
-      @include main_botton;
-    }
-    .main--btn:hover {
-      @include main_botton--hover;
-    }
-  }
-  //filters//
-  nav {
-    @include flexbox_center;
-    background: $white;
-    padding-bottom: 50px;
-
-    .container_filter {
-      margin-left: 5%;
-      margin-right: 5%;
-      margin-top: 30px;
-      width: 100%;
-      max-width: 1024px;
-      color: $text_page_color;
-
-      .filter_title {
-        font-size: 1.2em;
-        margin-left: -10px;
-      }
-      //btn_filters//
-      .container_btn--filter {
-        font-size: 13px;
-        margin-top: 20px;
-
-        .btn_filter--text {
-          width: 100%;
-        }
-        .btn_filter:hover {
-          @include effect_with_background--hover;
-        }
-        .btn_filter {
-          opacity: 1;
-          @include flexbox_align;
-          background: $ligh_grey_background;
-          font-weight: bold;
-          height: 60px;
-          border-radius: 15px;
-          box-shadow: 0px 5px 5px $color_shadow_border;
-
-          .btn_filter--notation {
-            color: #ffff;
-            position: relative;
-            background: $primary;
-            border-radius: 100%;
-            left: -10px;
-            padding: 4px;
-            padding-left: 8px;
-            padding-right: 8px;
-          }
-          .icon_filter {
-            color: $icon;
-            margin-right: 8%;
-            font-size: 16px;
-
-            .fa-mobile-alt {
-              margin-left: 4px;
-              padding-right: 2px;
-            }
-          }
-        }
-      }
-    }
-  }
 }
+//logo//
+.container_logo {
+  @include container_logo;
+  color: $text_page_color;
+  align-items: center;
+}
+.btn_return {
+  font-size: 1.3em;
+  margin-left: 10px;
+  height: max-content;
+  padding: 5px;
+}
+.btn_return:hover {
+  @include effect_without_background--hover;
+  box-shadow: none;
+  @include scale_strong_effect--hover;
+}
+.logo {
+  @include flexbox_center;
+  @include logo;
+  @include title_font-family;
+}
+
+//location//
+.location {
+  @include flexbox_center;
+  align-items: center;
+  background: $location_background;
+  box-shadow: inset 0px 5px 5px $color_shadow_border;
+  height: 50px;
+  font-size: 16px;
+  margin-left: -20px;
+  font-weight: bold;
+  color: $color_text_location;
+}
+.fa-map-marker-alt {
+  margin-right: 20px;
+}
+//title-subtitle-botton//
+.byline {
+  background: $ligh_grey_background;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  color: $text_page_color;
+}
+.main_title {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+}
+.subtitle {
+  font-size: 1em;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+.main_title,
+.subtitle,
+.container_main--btn {
+  @include flexbox_center;
+}
+.main--btn {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 14px;
+  @include main_botton;
+}
+.main--btn:hover {
+  @include main_botton--hover;
+}
+//filters//
+nav {
+  @include flexbox_center;
+  background: $white;
+  padding-bottom: 50px;
+}
+.container_filter {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 1024px;
+  color: $text_page_color;
+}
+
+.filter_title {
+  font-size: 1.2em;
+  margin-left: -10px;
+}
+//btn_filters//
+.container_btn--filter {
+  font-size: 13px;
+  margin-top: 20px;
+}
+.btn_filter--text {
+  width: 100%;
+}
+.btn_filter:hover {
+  @include effect_with_background--hover;
+}
+.btn_filter {
+  opacity: 1;
+  height: 60px;
+  @include default_btn;
+}
+.btn_filter--notation {
+  color: #ffff;
+  position: relative;
+  background: $primary;
+  border-radius: 100%;
+  left: -10px;
+  padding: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.icon_filter {
+  color: $icon;
+  margin-right: 8%;
+  font-size: 16px;
+}
+
+.fa-mobile-alt {
+  margin-left: 4px;
+  padding-right: 2px;
+}
+//media_querie//
 @media all and (min-width: 769px) {
   .filter_title {
     @include flexbox_center;

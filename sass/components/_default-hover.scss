@@ -19,3 +19,6 @@
   @mixin scale_effect--hover {
     transform: scale(1.01);
   }
+  @mixin scale_strong_effect--hover{
+    transform: scale(1.20);
+  }

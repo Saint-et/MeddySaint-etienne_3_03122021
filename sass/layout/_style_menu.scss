@@ -18,8 +18,9 @@
 }
 .title_menu {
   @include title_font-family;
-  font-size: 1.7em;
+  font-size: 1.5em;
   color: $text_page_color;
+  margin-left: -10px;
 }
 
 //heart//
@@ -29,13 +30,13 @@
 }
 .heart-empty {
   color: $text_page_color;
-  font-size: 2em;
+  font-size: 1.5em;
   transition: 1s;
   opacity: 1;
   margin-right: -32px;
 }
 .heart-full {
-  font-size: 2em;
+  font-size: 1.5em;
   transition: 1s;
   opacity: 0;
   background: -webkit-linear-gradient($primary, $secondary);

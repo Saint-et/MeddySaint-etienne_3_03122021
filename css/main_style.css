@@ -120,7 +120,7 @@ header {
   margin-left: 10px;
   height: max-content;
   padding: 5px;
-  transition: 350ms 250ms ease-in-out;
+  transition: 350ms 100ms ease-in-out;
 }
 .btn_return:hover {
   transform: scale(1.6);
@@ -150,6 +150,11 @@ header {
 
 .fa-map-marker-alt {
   margin-right: 20px;
+}
+
+main {
+  background: #F6F6F6;
+  padding-bottom: 20px;
 }
 
 .byline {
@@ -234,17 +239,17 @@ nav {
   box-shadow: 0px 5px 5px #d9d9d9;
   background: #F6F6F6;
   border-radius: 15px;
-  transition: 250ms 250ms, background-color 550ms 350ms ease-in-out;
+  transition: 250ms 100ms, background-color 550ms 130ms ease-in-out;
   width: 100%;
 }
 .btn_filter:hover > .container_check-circle {
   height: 100%;
   width: 30%;
-  transition: 550ms 150ms ease-in-out;
+  transition: 550ms 100ms ease-in-out;
 }
 .btn_filter:hover > .container_check-circle .icon-check-circle {
   transform: rotate(360deg);
-  transition: 550ms 150ms ease-in-out;
+  transition: 550ms 100ms ease-in-out;
 }
 .btn_filter:hover {
   transform: scale(0.99);
@@ -278,35 +283,16 @@ nav {
   padding-right: 2px;
 }
 
-@media all and (min-width: 769px) {
-  .filter_title {
-    display: flex;
-    justify-content: center;
-  }
-
-  .filter {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .filter .container_btn--filter {
-    width: 30%;
-    min-width: 230px;
-    margin-left: -4%;
-    margin-right: -4%;
-  }
-}
-main {
+#contaiter_restaurant {
   display: flex;
   justify-content: center;
-  background: #F6F6F6;
-  padding-bottom: 20px;
+  width: 100%;
+  margin-top: 40px;
 }
 
-#contaiter_restaurant {
-  margin: 40px 20px 20px 20px;
-  width: 100%;
-  max-width: 1024px;
+article {
+  width: 95%;
+  max-width: 1440px;
 }
 
 .article_title--restaurant {
@@ -325,7 +311,7 @@ main {
   margin-bottom: 20px;
   height: 255px;
   background: #ffff;
-  transition: 150ms 250ms ease-in-out;
+  transition: 150ms 100ms ease-in-out;
 }
 .card_restaurant:hover {
   transform: scale(1.02);
@@ -407,6 +393,23 @@ main {
 }
 
 @media all and (min-width: 769px) {
+  .filter_title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .filter .container_btn--filter {
+    width: 30%;
+    min-width: 230px;
+    margin-left: -4%;
+    margin-right: -4%;
+  }
+
   .article_title--restaurant {
     display: flex;
     justify-content: center;
@@ -450,7 +453,7 @@ footer {
 .footer_text {
   margin-bottom: 10px;
   width: max-content;
-  transition: 350ms 150ms ease-in-out;
+  transition: 350ms 100ms ease-in-out;
 }
 .footer_text:hover {
   text-decoration: underline;

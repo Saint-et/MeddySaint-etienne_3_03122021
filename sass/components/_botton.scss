@@ -25,7 +25,7 @@
   margin-left: 10px;
   height: max-content;
   padding: 5px;
-  transition: 350ms 250ms ease-in-out;
+  transition: 350ms 100ms ease-in-out;
 
   &:hover {
     transform: scale(1.6);
@@ -39,7 +39,7 @@
 @mixin filter_btn {
   height: 60px;
   @include default_btn;
-  transition: 250ms 250ms, background-color 550ms 350ms ease-in-out;
+  transition: 250ms 100ms, background-color 550ms 130ms ease-in-out;
 
   &:hover {
     transform: scale(0.99);
@@ -63,7 +63,7 @@
   margin-bottom: 20px;
   height: 255px;
   background: $white;
-  transition: 150ms 250ms ease-in-out;
+  transition: 150ms 100ms ease-in-out;
 
   &:hover {
     transform: scale(1.02);
@@ -85,11 +85,11 @@
   &:hover > .container_check-circle {
     height: 100%;
     width: 30%;
-    transition: 550ms 150ms ease-in-out;
+    transition: 550ms 100ms ease-in-out;
 
     .icon-check-circle {
       transform: rotate(360deg);
-      transition: 550ms 150ms ease-in-out;
+      transition: 550ms 100ms ease-in-out;
     }
   }
 }
@@ -101,7 +101,7 @@
 @mixin footer_btn {
   margin-bottom: 10px;
   width: max-content;
-  transition: 350ms 150ms ease-in-out;
+  transition: 350ms 100ms ease-in-out;
 
   &:hover {
     text-decoration: underline;

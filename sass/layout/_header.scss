@@ -9,15 +9,7 @@ header {
   align-items: center;
 }
 .btn_return {
-  font-size: 1.3em;
-  margin-left: 10px;
-  height: max-content;
-  padding: 5px;
-}
-.btn_return:hover {
-  @include effect_without_background--hover;
-  box-shadow: none;
-  @include scale_strong_effect--hover;
+  @include arrow_return;
 }
 .logo {
   @include flexbox_center;
@@ -71,9 +63,6 @@ header {
   font-size: 14px;
   @include main_botton;
 }
-.main--btn:hover {
-  @include main_botton--hover;
-}
 //filters//
 nav {
   @include flexbox_center;
@@ -98,19 +87,12 @@ nav {
   font-size: 13px;
   margin-top: 20px;
 }
-.btn_filter--text {
+.btn_filter {
+  @include filter_btn;
   width: 100%;
 }
-.btn_filter:hover {
-  @include effect_with_background--hover;
-}
-.btn_filter {
-  opacity: 1;
-  height: 60px;
-  @include default_btn;
-}
 .btn_filter--notation {
-  color: #ffff;
+  color: $text_footer;
   position: relative;
   background: $primary;
   border-radius: 100%;
@@ -124,7 +106,6 @@ nav {
   margin-right: 8%;
   font-size: 16px;
 }
-
 .fa-mobile-alt {
   margin-left: 4px;
   padding-right: 2px;
@@ -141,7 +122,7 @@ nav {
 
     .container_btn--filter {
       width: 30%;
-      min-width: 220px;
+      min-width: 230px;
       margin-left: -4%;
       margin-right: -4%;
     }

@@ -1,23 +1,17 @@
 //hearts//
-@mixin heart_empty {
-    font-size: 1.8em;
+@mixin heart {
+  height: max-content;
+  &:hover > .heart {
+    .heart-empty {
+      color: $text_page_color;
+      opacity: 0;
+    }
+    .heart-full {
+      opacity: 1;
+      background: -webkit-linear-gradient($primary, $secondary);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
-  @mixin heart_full_transparent {
-    font-size: 2em;
-    background: -webkit-linear-gradient($primary, $secondary);
-    opacity: 0;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  //hearts_hover//
-  @mixin heart_full_hover {
-    cursor: pointer;
-    transition: 0.5s;
-    transform: scale(1.05);
-    opacity: 1;
-    background: -webkit-linear-gradient($primary, $secondary);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+}

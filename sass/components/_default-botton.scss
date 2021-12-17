@@ -1,7 +1,0 @@
-@mixin default_btn {
-    @include flexbox_align;
-          background: $ligh_grey_background;
-          font-weight: bold;
-          border-radius: 15px;
-          box-shadow: 0px 5px 5px $color_shadow_border;
-}

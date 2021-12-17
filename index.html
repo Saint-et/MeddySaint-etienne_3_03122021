@@ -5,10 +5,8 @@
       @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
     </style>
-    <script
-      src="https://kit.fontawesome.com/aac31809c8.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,6 +14,7 @@
     <title>Ohmyfood</title>
   </head>
   <body>
+    <div class="loading"><div class="lds-hourglass"></div></div>
     <header>
       <div class="container_logo"><p class="logo">ohmyfood</p></div>
       <div class="location"><i class="fas fa-map-marker-alt"></i>Paris, belleville</div>
@@ -40,29 +39,25 @@
           <div class="filter">
 
             <div class="container_btn--filter">
-            <a href="#"><div class="btn_filter">
+            <a href="#">
+            <div class="btn_filter">
             <span class="btn_filter--notation">1</span>
-            <p class="btn_filter--text">
-            <span class="icon_filter">
-            <i class="fas fa-mobile-alt"></i> </span>Choisissez un restaurant</p>
-            </div></a>
-            </div>
+            <div class="icon_filter"><i class="fas fa-mobile-alt"></i></div> Choisissez un restaurant</div>
+            </a></div>
+
             <div class="container_btn--filter">
-            <a href="#"><div class="btn_filter">
+            <a href="#">
+            <div class="btn_filter">
             <span class="btn_filter--notation">2</span>
-            <p class="btn_filter--text">
-            <span class="icon_filter">
-            <i class="fas fa-list-ul"></i> </span>Composez votre menu</p>
-            </div></a>
-            </div>
+            <div class="icon_filter"><i class="fas fa-list-ul"></i></div> Composez votre menu</div>
+            </a></div>
+
             <div class="container_btn--filter">
-            <a href="#"><div class="btn_filter">
+            <a href="#">          
+            <div class="btn_filter">
             <span class="btn_filter--notation">3</span>
-            <p class="btn_filter--text">
-            <span class="icon_filter">
-            <i class="fas fa-store"></i> </span>Dégustez au restaurant</p>
-            </div></a>
-            </div>
+            <div class="icon_filter"><i class="fas fa-store"></i></div> Dégustez au restaurant</div>
+            </a></div>
 
           </div>
 
@@ -79,7 +74,7 @@
 
 
       <div class="card_restaurant">
-      <a href="./menu_restaurants_1.html">
+      <a href="./html/menu_restaurants_1 (La palette du goût).html">
       
       <div class="container_new--message">
       <h3 class="text_new--message">Nouveau</h3>
@@ -95,14 +90,13 @@
       <p class="text_card--restaurant">Ménilmontant</p>
       </div>
 
-      <div>
-      <i class="far fa-heart heart-empty"></i><i class="fas fa-heart heart-full"></i>
+      <div class="container_heart">
+        <div class="heart"><i class="far fa-heart heart-empty"></i><i class="fas fa-heart heart-full"></i></div>
       </div></div></a>
-      
       </div>
 
       <div class="card_restaurant">
-      <a href="#">
+      <a href="./html/menu_restaurants_2 (La note enchantée).html">
 
       <div class="container_new--message">
       <h3 class="text_new--message">Nouveau</h3>
@@ -119,14 +113,14 @@
       <p class="text_card--restaurant">charonne</p>
       </div>
 
-      <div>
-      <i class="far fa-heart heart-empty"></i><i class="fas fa-heart heart-full"></i>
+      <div class="container_heart">
+        <div class="heart"><i class="far fa-heart heart-empty"></i><i class="fas fa-heart heart-full"></i></div>
       </div></div></a>
       
       </div>
 
       <div class="card_restaurant">
-      <a href="#">
+      <a href="./html/menu_restaurants_3 (À la française).html">
 
                 <img class="card_restaurant--img"
                   src="pictures/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
@@ -138,14 +132,14 @@
       <p class="text_card--restaurant">Cité Rouge</p>
       </div>
 
-      <div>
-      <i class="far fa-heart heart-empty"></i><i class="fas fa-heart heart-full"></i>
+      <div class="container_heart">
+        <div class="heart"><i class="far fa-heart heart-empty"></i><i class="fas fa-heart heart-full"></i></div>
       </div></div></a>
 
       </div>
 
       <div class="card_restaurant">
-      <a href="#">
+      <a href="./html/menu_restaurants_4 (Le délice des sens).html">
 
                 <img class="card_restaurant--img"
                   src="pictures/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
@@ -153,12 +147,12 @@
 
       <div class="container_text--card">
       <div>
-      <h3 class="title_card--restaurant">Le délice des gens</h3>
+      <h3 class="title_card--restaurant">Le délice des sens</h3>
       <p class="text_card--restaurant">Folie-Méricourt</p>
       </div>
 
-      <div>
-      <i class="far fa-heart heart-empty"></i><i class="fas fa-heart heart-full"></i>
+      <div class="container_heart">
+        <div class="heart"><i class="far fa-heart heart-empty"></i><i class="fas fa-heart heart-full"></i></div>
       </div></div></a>
 
       </div>
@@ -197,7 +191,5 @@
 
     </div>
     </footer>
-
-
   </body>
 </html>

@@ -1,6 +1,3 @@
-main {
-  margin: auto;
-}
 // picture_of_menu//
 .picture_presentation {
   width: 100%;
@@ -8,9 +5,9 @@ main {
   object-fit: cover;
 }
 .container_menu {
-  width: 100%;
+  width: 90%;
   padding: 10px;
-  max-width: 1800px;
+  max-width: 1440px;
 }
 //title_and_icon//
 .container_title_and_heart {
@@ -24,20 +21,30 @@ main {
   font-size: 1.7em;
   color: $text_page_color;
 }
-.heart {
+
+//heart//
+.container_heart {
   margin-top: 30px;
+  @include heart;
 }
 .heart-empty {
-  @include heart_empty;
-  margin-right: -30.5px;
+  color: $text_page_color;
+  font-size: 2em;
+  transition: 1s;
+  opacity: 1;
+  margin-right: -32px;
 }
 .heart-full {
-  margin-right: 10px;
-  @include heart_full_transparent;
+  font-size: 2em;
+  transition: 1s;
+  opacity: 0;
+  background: -webkit-linear-gradient($primary, $secondary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.heart-full:hover {
-  @include heart_full_hover;
-}
+
+//________________//
 //article//
 section {
   margin-bottom: 50px;
@@ -53,9 +60,11 @@ article {
 //menu-container//
 .menu {
   width: 100%;
+  height: fit-content;
 }
 .container_content--article {
   padding-top: 20px;
+  height: max-content;
 }
 .subtitle {
   color: $text_page_color;
@@ -64,13 +73,11 @@ article {
   display: flex;
   justify-content: flex-start;
   margin-left: 0px;
-  
 }
-.underline{
+.underline {
   border-bottom: 3px solid $tertiary;
   margin-right: 86%;
   margin-left: 10px;
-  
 }
 .content_article {
   color: $text_page_color;
@@ -78,35 +85,71 @@ article {
   justify-content: space-between;
   margin-top: 20px;
 }
+.container_check-circle {
+  @include flexbox_center;
+  align-items: center;
+  height: 100%;
+  transition: 550ms;
+  background: $tertiary;
+  width: 0%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 0px 15px 15px 0px;
+}
+.fa-icon-circle {
+  color: #ffff;
+  font-size: 1.5em;
+}
 .container_list--menu {
-  @include default_btn;
   margin-bottom: 20px;
+}
+.load_1 {
+  animation-name: animation;
+  animation-duration: 600ms;
+}
+.load_2 {
+  animation-name: animation;
+  animation-duration: 1200ms;
+}
+.load_3 {
+  animation-name: animation;
+  animation-duration: 1800ms;
+}
+.load_4 {
+  animation-name: animation;
+  animation-duration: 2400ms;
 }
 .list_menu {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
   height: 65px;
+  width: 100%;
+  @include default_btn;
+  overflow: hidden;
+  transition: 150ms 250ms ease-in-out;
+}
+.list_menu:hover {
+  transform: scale(1.04);
 }
 .container_menu--title {
   margin-left: 10px;
-  width: 85%;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .list_menu--title {
-  margin-top: 15px;
+  margin-top: 5px;
   font-weight: 600;
   font-size: 1em;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .list_menu--subtitle {
-  font-weight: 100;
+  font-weight: 500;
   font-size: 0.85em;
+  margin-top: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
-  margin-top: 5px;
 }
 .price {
   font-size: 0.85em;
@@ -121,9 +164,6 @@ article {
   display: flex;
   align-self: flex-start;
 }
-.main--btn:hover {
-  @include main_botton--hover;
-}
 .main--btn {
   padding-left: 60px;
   padding-right: 60px;
@@ -132,6 +172,14 @@ article {
 }
 //media_querie//
 @media all and (min-width: 769px) {
+  article {
+    border-radius: 50px 50px 0px 0px;
+    background: $white;
+    margin-top: -50px;
+    width: 100%;
+    position: relative;
+    @include flexbox_center;
+  }
   .menu {
     display: flex;
     justify-content: space-around;
@@ -140,5 +188,7 @@ article {
   }
   .container_content--article {
     width: 32%;
+    min-width: 312px;
+    margin: 5px;
   }
 }

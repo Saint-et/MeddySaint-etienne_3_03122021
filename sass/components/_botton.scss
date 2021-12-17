@@ -1,0 +1,112 @@
+//---------------------------main_botton-------------------------------//
+
+@mixin main_botton {
+  color: #ffff;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 50px;
+  background: $color_bradient;
+  box-shadow: 0px 0px 10px 0px $color_shadow_border;
+  transition: 250ms, background-color 550ms 150ms ease-in-out;
+  &:hover {
+    transform: scale(1.04);
+    @include background_main_btn;
+    box-shadow: 0px 0px 10px 0px darken($color_shadow_border, 30%);
+  }
+}
+
+//_____________________________________________________________________//
+
+//------------------------arrow_return_botton--------------------------//
+
+@mixin arrow_return {
+  font-size: 1.3em;
+  margin-left: 10px;
+  height: max-content;
+  padding: 5px;
+  transition: 350ms 250ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.6);
+  }
+}
+
+//_____________________________________________________________________//
+
+//----------------------------filter_btn-------------------------------//
+
+@mixin filter_btn {
+  height: 60px;
+  @include default_btn;
+  transition: 250ms 250ms, background-color 550ms 350ms ease-in-out;
+
+  &:hover {
+    transform: scale(0.99);
+    @include primary_lighten--background;
+    @include color_shadow_border--darken;
+  }
+
+  &:hover > .icon_filter {
+    transition: 550ms ease-in-out;
+    color: $primary;
+  }
+}
+
+//_____________________________________________________________________//
+
+//------------------------------card_main------------------------------//
+
+@mixin card_restaurant {
+  @include border_shadow;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  height: 255px;
+  background: $white;
+  transition: 150ms 250ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.02);
+    @include color_shadow_border--darken;
+  }
+}
+
+//_____________________________________________________________________//
+
+//--------------------------default_botton-----------------------------//
+
+@mixin default_btn {
+  @include flexbox_align;
+  font-weight: bold;
+  box-shadow: 0px 5px 5px $color_shadow_border;
+  background: $ligh_grey_background;
+  border-radius: 15px;
+
+  &:hover > .container_check-circle {
+    height: 100%;
+    width: 30%;
+    transition: 550ms 150ms ease-in-out;
+
+    .icon-check-circle {
+      transform: rotate(360deg);
+      transition: 550ms 150ms ease-in-out;
+    }
+  }
+}
+
+//_____________________________________________________________________//
+
+//----------------------------footer_btn-------------------------------//
+
+@mixin footer_btn {
+  margin-bottom: 10px;
+  width: max-content;
+  transition: 350ms 150ms ease-in-out;
+
+  &:hover {
+    text-decoration: underline;
+    transform: scale(0.97);
+  }
+}
+
+//_____________________________________________________________________//

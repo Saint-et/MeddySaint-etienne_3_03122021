@@ -19,14 +19,8 @@ footer {
 .footer_container--text {
   margin-left: -40px;
 }
-.footer_text:hover {
-  transition: 0.5s;
-  text-decoration: underline;
-  transform: scale(0.98);
-}
 .footer_text {
-  margin-bottom: 10px;
-  width: max-content;
+  @include footer_btn;
 }
 .footer_text--content {
   color: $text_footer;

@@ -18,16 +18,8 @@ main {
 .container_card--restaurant {
   width: 100%;
 }
-.card_restaurant:hover {
-  @include scale_effect--hover;
-  @include effect_without_background--hover;
-}
 .card_restaurant {
-  @include border_shadow;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  height: 255px;
-  background: $white;
+  @include card_restaurant;
 }
 .card_restaurant--img {
   border-radius: 10px 10px 0px 0px;
@@ -57,7 +49,6 @@ main {
   margin: 15px 10px 0px 10px;
   color: $text_page_color;
 }
-
 .title_card--restaurant {
   margin-top: 0px;
   font-size: 1em;
@@ -66,17 +57,25 @@ main {
   margin-top: -10px;
   font-size: 1em;
 }
-.heart-full:hover {
-  @include heart_full_hover;
-}
-.heart-full {
-  @include heart_full_transparent;
-  margin-right: 10px;
+.container_heart {
+  @include heart;
+  margin-right: 15px;
 }
 .heart-empty {
-  @include heart_empty;
-  margin-right: -30.5px;
-  margin-top: -2px;
+  color: black;
+  font-size: 1.8em;
+  transition: 1s;
+  opacity: 1;
+  margin-right: -29px;
+}
+.heart-full {
+  font-size: 1.8em;
+  transition: 1s;
+  opacity: 0;
+  background: -webkit-linear-gradient($primary, $secondary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 //media_querie//
 @media all and (min-width: 769px) {

@@ -33,7 +33,7 @@
   font-size: 1.5em;
   transition: 1s;
   opacity: 1;
-  margin-right: -32px;
+  margin-right: -24px;
 }
 .heart-full {
   font-size: 1.5em;
@@ -62,11 +62,10 @@ article {
 //menu-container//
 .menu {
   width: 100%;
-  height: fit-content;
 }
 .container_content--article {
   padding-top: 20px;
-  height: max-content;
+
 }
 .subtitle {
   color: $text_page_color;
@@ -201,5 +200,12 @@ article {
   .container_content--article {
     width: 32%;
     margin: 5px;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    height: 450px;
   }
 }

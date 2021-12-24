@@ -375,7 +375,7 @@ footer {
 .footer_text {
   margin-bottom: 10px;
   width: max-content;
-  transition: 350ms 100ms ease-in-out;
+  transition: 200ms 100ms ease-in-out;
 }
 .footer_text:hover {
   text-decoration: underline;

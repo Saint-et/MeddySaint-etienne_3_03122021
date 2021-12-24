@@ -39,7 +39,7 @@
 @mixin filter_btn {
   height: 60px;
   @include default_btn;
-  transition: 250ms 100ms, background-color 550ms 130ms ease-in-out;
+  transition: 200ms 100ms, background-color 200ms 130ms ease-in-out;
 
   &:hover {
     transform: scale(0.99);
@@ -59,6 +59,7 @@
 
 @mixin card_restaurant {
   @include border_shadow;
+  overflow: hidden;
   border-radius: 10px;
   margin-bottom: 20px;
   height: 255px;
@@ -101,7 +102,7 @@
 @mixin footer_btn {
   margin-bottom: 10px;
   width: max-content;
-  transition: 350ms 100ms ease-in-out;
+  transition: 200ms 100ms ease-in-out;
 
   &:hover {
     text-decoration: underline;

@@ -104,9 +104,10 @@ article {
   @include card_restaurant;
 }
 .card_restaurant--img {
-  height: 180px;
+  height: 200px;
   width: 100%;
   object-fit: cover;
+  object-position: 50% 60%;
 }
 //message_new//
 .container_new--message {

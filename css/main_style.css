@@ -319,7 +319,7 @@ article {
   overflow: hidden;
   border-radius: 10px;
   margin-bottom: 20px;
-  height: 255px;
+  height: 275px;
   background: #ffff;
   transition: 150ms 100ms ease-in-out;
 }
@@ -329,9 +329,10 @@ article {
 }
 
 .card_restaurant--img {
-  height: 180px;
+  height: 200px;
   width: 100%;
   object-fit: cover;
+  object-position: 50% 60%;
 }
 
 .container_new--message {

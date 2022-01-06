@@ -1,15 +1,29 @@
+//-----------------utils-----------------//
+
 @import "./utils/variables";
 @import "./utils/mixin";
+
+//________________________________________//
+
+//------------------base-----------------//
 
 @import "./base/loading";
 @import "./base/font-family";
 @import "./base/form";
 
+//________________________________________//
+
+//---------------components---------------//
+
 @import "./components/animation";
 @import "./components/botton";
-@import "./components/heart";
-@import "./components/logo";
+
+//________________________________________//
+
+//-----------------layout-----------------//
 
 @import "./layout/header";
 @import "./layout/main";
 @import "./layout/footer";
+
+//________________________________________//

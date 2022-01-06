@@ -21,7 +21,14 @@ footer {
   margin-left: -40px;
 }
 .footer_text {
-  @include footer_btn;
+  margin-bottom: 10px;
+  width: max-content;
+  transition: 200ms 100ms ease-in-out;
+
+  &:hover {
+    text-decoration: underline;
+    transform: scale(0.97);
+  }
 }
 .footer_text--content {
   color: $text_footer;

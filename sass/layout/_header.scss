@@ -4,7 +4,8 @@ header {
 }
 //logo//
 .container_logo {
-  @include container_logo;
+  display: flex;
+  height: 70px;
   color: $text_page_color;
   align-items: center;
 }
@@ -13,8 +14,10 @@ header {
 }
 .logo {
   @include flexbox_center;
-  @include logo;
   @include title_font-family;
+  margin: auto;
+  font-size: 2em;
+  margin-top: 15px;
 }
 
 //location//

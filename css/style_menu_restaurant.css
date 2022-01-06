@@ -12,20 +12,23 @@ body ul {
 
 @keyframes animation {
   0% {
-    margin-top: 10%;
+    margin-top: 5%;
     opacity: 0;
   }
-  25% {
+  20% {
     opacity: 0;
   }
-  50% {
-    opacity: 0;
+  40% {
+    opacity: 0, 2;
   }
-  75% {
-    opacity: 1;
+  60% {
+    opacity: 0, 4;
+  }
+  80% {
+    opacity: 0, 8;
   }
   100% {
-    margin-top: 0px;
+    margin-top: 0%;
     opacity: 1;
   }
 }
@@ -56,10 +59,10 @@ header {
 .logo {
   display: flex;
   justify-content: center;
+  font-family: "Shrikhand", sans-serif;
   margin: auto;
   font-size: 2em;
   margin-top: 15px;
-  font-family: "Shrikhand", sans-serif;
 }
 
 .location {
@@ -143,7 +146,7 @@ section {
   margin-bottom: 50px;
 }
 
-article {
+.container_content--article {
   border-radius: 50px 50px 0px 0px;
   background: #ffff;
   margin-top: -70px;
@@ -157,7 +160,7 @@ article {
   width: 100%;
 }
 
-.container_content--article {
+.content_article {
   padding-top: 20px;
 }
 
@@ -174,14 +177,30 @@ article {
   border-bottom: 3px solid #99e2d0;
   margin-right: 86%;
   margin-left: 10px;
+  margin-bottom: 20px;
 }
 
-.content_article {
+article {
   color: #000;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-top: 20px;
+}
+article .load_1 {
+  animation-duration: 550ms;
+}
+article .load_2 {
+  animation-duration: 1100ms;
+}
+article .load_3 {
+  animation-duration: 1650ms;
+}
+article .load_4 {
+  animation-duration: 2200ms;
+}
+article .loading_slide {
+  animation-name: animation;
 }
 
 .container_check-circle {
@@ -204,26 +223,6 @@ article {
 
 .container_list--menu {
   margin-bottom: 20px;
-}
-
-.load_1 {
-  animation-name: animation;
-  animation-duration: 600ms;
-}
-
-.load_2 {
-  animation-name: animation;
-  animation-duration: 1200ms;
-}
-
-.load_3 {
-  animation-name: animation;
-  animation-duration: 1800ms;
-}
-
-.load_4 {
-  animation-name: animation;
-  animation-duration: 2400ms;
 }
 
 .list_menu {
@@ -311,7 +310,7 @@ article {
 }
 
 @media all and (min-width: 769px) {
-  article {
+  .container_content--article {
     border-radius: 50px 50px 0px 0px;
     background: #ffff;
     margin-top: -50px;
@@ -328,13 +327,13 @@ article {
     margin: auto;
   }
 
-  .container_content--article {
+  .content_article {
     width: 48%;
     margin: 5px;
   }
 }
 @media all and (min-width: 1075px) {
-  .container_content--article {
+  .content_article {
     width: 32%;
     margin: 5px;
   }
@@ -344,7 +343,7 @@ article {
     justify-content: space-around;
     flex-wrap: wrap;
     margin: auto;
-    height: 450px;
+    height: 400px;
   }
 }
 footer {

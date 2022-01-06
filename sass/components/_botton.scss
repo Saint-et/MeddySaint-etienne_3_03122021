@@ -6,7 +6,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
   border-radius: 50px;
-  background: $color_bradient;
+  background: $color_gradient;
   box-shadow: 0px 0px 10px 0px $color_shadow_border;
   transition: 250ms, background-color 550ms 150ms ease-in-out;
   &:hover {
@@ -55,8 +55,7 @@
 
 //_____________________________________________________________________//
 
-//------------------------------card_main------------------------------//
-
+//---------------------------card_restaurant---------------------------//
 @mixin card_restaurant {
   @include border_shadow;
   overflow: hidden;
@@ -71,7 +70,6 @@
     @include color_shadow_border--darken;
   }
 }
-
 //_____________________________________________________________________//
 
 //--------------------------default_botton-----------------------------//
@@ -97,16 +95,22 @@
 
 //_____________________________________________________________________//
 
-//----------------------------footer_btn-------------------------------//
+//----------------------------botton_hearts----------------------------//
 
-@mixin footer_btn {
-  margin-bottom: 10px;
-  width: max-content;
-  transition: 200ms 100ms ease-in-out;
-
-  &:hover {
-    text-decoration: underline;
-    transform: scale(0.97);
+@mixin heart {
+  height: max-content;
+  &:hover > .heart {
+    .heart-empty {
+      color: $text_page_color;
+      opacity: 0;
+    }
+    .heart-full {
+      opacity: 1;
+      background: -webkit-linear-gradient($primary, $secondary);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 }
 

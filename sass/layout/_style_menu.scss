@@ -51,7 +51,7 @@
 section {
   margin-bottom: 50px;
 }
-article {
+.container_content--article {
   border-radius: 50px 50px 0px 0px;
   background: $white;
   margin-top: -70px;
@@ -63,9 +63,8 @@ article {
 .menu {
   width: 100%;
 }
-.container_content--article {
+.content_article {
   padding-top: 20px;
-
 }
 .subtitle {
   color: $text_page_color;
@@ -79,12 +78,19 @@ article {
   border-bottom: 3px solid $tertiary;
   margin-right: 86%;
   margin-left: 10px;
+  margin-bottom: 20px;
 }
-.content_article {
+article {
   color: $text_page_color;
   @include flexbox_column;
   justify-content: space-between;
   margin-top: 20px;
+
+  //---------loading_slide list menu (_function.scss)-----------//
+  @include loading-fn(".load_1", ".load_2", ".load_3", ".load_4");
+  .loading_slide {
+    animation-name: animation;
+  }
 }
 .container_check-circle {
   @include flexbox_center;
@@ -104,25 +110,6 @@ article {
 .container_list--menu {
   margin-bottom: 20px;
 }
-
-//for more animation slide menu add ( load_# ) with +600ms//
-.load_1 {
-  animation-name: animation;
-  animation-duration: 600ms;
-}
-.load_2 {
-  animation-name: animation;
-  animation-duration: 1200ms;
-}
-.load_3 {
-  animation-name: animation;
-  animation-duration: 1800ms;
-}
-.load_4 {
-  animation-name: animation;
-  animation-duration: 2400ms;
-}
-//______________________________________________________//
 
 .list_menu {
   display: flex;
@@ -176,7 +163,7 @@ article {
 }
 //media_querie//
 @media all and (min-width: 769px) {
-  article {
+  .container_content--article {
     border-radius: 50px 50px 0px 0px;
     background: $white;
     margin-top: -50px;
@@ -190,14 +177,14 @@ article {
     flex-wrap: wrap;
     margin: auto;
   }
-  .container_content--article {
+  .content_article {
     width: 48%;
     margin: 5px;
   }
 }
 
 @media all and (min-width: 1075px) {
-  .container_content--article {
+  .content_article {
     width: 32%;
     margin: 5px;
   }
@@ -208,8 +195,8 @@ article {
     margin: auto;
     // change height if you add more menu //
 
-    height: 450px;
-    
+    height: 400px;
+
     //____________________________________//
   }
 }

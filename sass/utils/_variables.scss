@@ -4,7 +4,7 @@ $secondary: #ff79da; //#FF79DA//
 $tertiary: #99e2d0; //#99e2d0//
 
 //color_main_botton//
-$color_bradient: linear-gradient($secondary, $primary);
+$color_gradient: linear-gradient($secondary, $primary);
 @mixin background_main_btn {
 background: linear-gradient(lighten($secondary, 5%), lighten($primary, 10%));
 }
@@ -52,5 +52,5 @@ $color_shadow_border: #d9d9d9; //#d9d9d9//
 
 //shadow_hover//
 @mixin color_shadow_border--darken {
-    box-shadow: 0px 0px 10px 2px darken($color_shadow_border, 2%); //5px 5px 5px darken($color_shadow_border, 2%)//
+    box-shadow: 0px 0px 10px 2px darken($color_shadow_border, 2%); //0px 0px 10px 2px darken($color_shadow_border, 2%)//
 }

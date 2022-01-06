@@ -1,0 +1,10 @@
+//---------loading_slide list menu-----------//
+
+@mixin loading-fn($desc...) {
+  @for $i from 0 to length($desc) {
+    #{nth($desc, $i + 1)} {
+      animation-duration: 550ms + $i * 550;
+    }
+  }
+}
+//__________________________________________//

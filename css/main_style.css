@@ -78,6 +78,7 @@
   }
 }
 body {
+  height: auto;
   margin: auto;
   font-family: "Roboto", sans-serif;
 }
@@ -299,7 +300,7 @@ nav {
   margin-top: 3rem;
 }
 
-article {
+.article {
   width: 95%;
   max-width: 1440px;
 }

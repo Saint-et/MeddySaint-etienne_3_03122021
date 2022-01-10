@@ -6,7 +6,7 @@
 }
 .container_menu {
   width: 90%;
-  padding: 1rem;
+  padding: 10px;
   max-width: 1440px;
 }
 //title_and_icon//
@@ -33,7 +33,7 @@
   font-size: 1.5em;
   transition: 1s;
   opacity: 1;
-  margin-right: -2.4rem;
+  margin-right: -24px;
 }
 .heart-full {
   font-size: 1.5em;
@@ -54,7 +54,7 @@ section {
 .container_content--article {
   border-radius: 50px 50px 0px 0px;
   background: $white;
-  margin-top: -7rem;
+  margin-top: -70px;
   width: 100%;
   position: relative;
   @include flexbox_center;
@@ -182,14 +182,14 @@ article {
     margin: auto;
   }
   .content_article {
-    width: 48%;
+    width: 45%;
     margin: 0.5rem;
   }
 }
 
 @media all and (min-width: 1075px) {
   .content_article {
-    width: 32%;
+    width: 31%;
     margin: 0.5rem;
   }
   .menu {

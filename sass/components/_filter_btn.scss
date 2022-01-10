@@ -1,0 +1,24 @@
+//----------------------------filter_btn-------------------------------//
+
+@mixin filter_btn {
+    height: 60px;
+    @include flexbox_align;
+    font-weight: bold;
+    box-shadow: 0px 5px 5px $color_shadow_border;
+    background: $ligh_grey_background;
+    border-radius: 15px;
+    transition: 200ms 100ms, background-color 200ms 130ms ease-in-out;
+  
+    &:hover {
+      transform: scale(0.99);
+      @include primary_lighten--background;
+      @include color_shadow_border--darken;
+    }
+  
+    &:hover > .icon_filter {
+      transition: 550ms ease-in-out;
+      color: $primary;
+    }
+  }
+  
+  //_____________________________________________________________________//

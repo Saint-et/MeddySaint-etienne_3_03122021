@@ -1,0 +1,16 @@
+//---------------------------card_restaurant---------------------------//
+@mixin card_restaurant {
+    @include border_shadow;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: 275px;
+    background: $white;
+    transition: 150ms 100ms ease-in-out;
+  
+    &:hover {
+      transform: scale(1.02);
+      @include color_shadow_border--darken;
+    }
+  }
+  //_____________________________________________________________________//

@@ -115,7 +115,7 @@ article {
   display: flex;
   height: 4rem;
   width: 100%;
-  @include default_btn;
+  @include menu_btn;
   overflow: hidden;
   transition: 150ms 100ms ease-in-out;
 }

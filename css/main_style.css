@@ -252,15 +252,6 @@ nav {
   transition: 200ms 100ms, background-color 200ms 130ms ease-in-out;
   width: 100%;
 }
-.btn_filter:hover > .container_check-circle {
-  height: 100%;
-  width: 30%;
-  transition: 550ms 100ms ease-in-out;
-}
-.btn_filter:hover > .container_check-circle .icon-check-circle {
-  transform: rotate(360deg);
-  transition: 550ms 100ms ease-in-out;
-}
 .btn_filter:hover {
   transform: scale(0.99);
   background: #f2eafb;

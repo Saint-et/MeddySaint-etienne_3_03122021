@@ -1,12 +1,12 @@
 // picture_of_menu//
 .picture_presentation {
   width: 100%;
-  height: 400px;
+  height: 40rem;
   object-fit: cover;
 }
 .container_menu {
   width: 90%;
-  padding: 10px;
+  padding: 1rem;
   max-width: 1440px;
 }
 //title_and_icon//
@@ -20,12 +20,12 @@
   @include title_font-family;
   font-size: 1.5em;
   color: $text_page_color;
-  margin-left: -10px;
+  margin-left: -1rem;
 }
 
 //heart//
 .container_heart {
-  margin-top: 30px;
+  margin-top: 3rem;
   @include heart;
 }
 .heart-empty {
@@ -33,7 +33,7 @@
   font-size: 1.5em;
   transition: 1s;
   opacity: 1;
-  margin-right: -24px;
+  margin-right: -2.4rem;
 }
 .heart-full {
   font-size: 1.5em;
@@ -49,12 +49,12 @@
 
 //article//
 section {
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 .container_content--article {
   border-radius: 50px 50px 0px 0px;
   background: $white;
-  margin-top: -70px;
+  margin-top: -7rem;
   width: 100%;
   position: relative;
   @include flexbox_center;
@@ -64,27 +64,27 @@ section {
   width: 100%;
 }
 .content_article {
-  padding-top: 20px;
+  padding-top: 2rem;
 }
 .subtitle {
   color: $text_page_color;
   font-size: 0.8em;
-  padding-bottom: 5px;
+  padding-bottom: 0.5rem;
   display: flex;
   justify-content: flex-start;
-  margin-left: 0px;
+  margin-left: 0rem;
 }
 .underline {
   border-bottom: 3px solid $tertiary;
   margin-right: 86%;
-  margin-left: 10px;
-  margin-bottom: 20px;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
 }
 article {
   color: $text_page_color;
   @include flexbox_column;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 2rem;
 
   //---------loading_slide list menu (_function.scss)-----------//
   @include loading-fn(".load_1", ".load_2", ".load_3", ".load_4");
@@ -113,7 +113,7 @@ article {
 
 .list_menu {
   display: flex;
-  height: 65px;
+  height: 4rem;
   width: 100%;
   @include default_btn;
   overflow: hidden;
@@ -123,14 +123,14 @@ article {
   transform: scale(1.04);
 }
 .container_menu--title {
-  margin-left: 10px;
+  margin-left: 1rem;
   width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 .list_menu--title {
-  margin-top: 5px;
+  margin-top: 0.5rem;
   font-weight: 600;
   font-size: 1em;
   overflow: hidden;
@@ -139,38 +139,38 @@ article {
 .list_menu--subtitle {
   font-weight: 400;
   font-size: 0.85em;
-  margin-top: 5px;
+  margin-top: 0.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .price {
   font-size: 0.85em;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   align-self: flex-end;
 }
 //ordered_btn//
 .container_main--btn {
   margin: auto;
-  margin-top: 50px;
+  margin-top: 5rem;
   @include flexbox_center;
 }
 .main--btn {
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 6rem;
+  padding-right: 6rem;
   @include main_botton;
   font-size: 0.85em;
 }
 //media_querie//
 @media all and (min-width: 769px) {
   .picture_presentation{
-    height: 500px;
+    height: 50rem;
     object-position: 50% 60%;
   }
   .container_content--article {
     border-radius: 50px 50px 0px 0px;
     background: $white;
-    margin-top: -50px;
+    margin-top: -5rem;
     width: 100%;
     position: relative;
     @include flexbox_center;
@@ -183,14 +183,14 @@ article {
   }
   .content_article {
     width: 48%;
-    margin: 5px;
+    margin: 0.5rem;
   }
 }
 
 @media all and (min-width: 1075px) {
   .content_article {
     width: 32%;
-    margin: 5px;
+    margin: 0.5rem;
   }
   .menu {
     display: flex;
@@ -199,7 +199,7 @@ article {
     margin: auto;
     // change height if you add more menu //
 
-    height: 400px;
+    height: 28rem;
 
     //____________________________________//
   }

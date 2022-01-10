@@ -5,8 +5,8 @@ main {
 //title-subtitle-botton//
 .byline {
   background: $ligh_grey_background;
-  padding-bottom: 40px;
-  padding-top: 20px;
+  padding-bottom: 3rem;
+  padding-top: 1rem;
   color: $text_page_color;
 }
 .main_title {
@@ -28,9 +28,9 @@ main {
   @include flexbox_center;
 }
 .main--btn {
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 14px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 0.9em;
   @include main_botton;
 }
 //filters//
@@ -42,20 +42,20 @@ nav {
 .container_filter {
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: 30px;
+  margin-top: 2rem;
   width: 100%;
   max-width: 1024px;
   color: $text_page_color;
 }
 
 .filter_title {
-  font-size: 1.2em;
-  margin-left: -10px;
+  font-size: 1.2rem;
+  margin-left: -0.5rem;
 }
 //btn_filters//
 .container_btn--filter {
-  font-size: 13px;
-  margin-top: 20px;
+  font-size: 0.8em;
+  margin-top: 1rem;
 }
 .btn_filter {
   @include filter_btn;
@@ -67,25 +67,25 @@ nav {
   background: $primary;
   border-radius: 100%;
   left: -10px;
-  padding: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 0.3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .icon_filter {
   color: $icon;
   margin-right: 8%;
-  font-size: 16px;
+  font-size: 1.2em;
 }
 .fa-mobile-alt {
-  margin-left: 4px;
-  padding-right: 2px;
+  margin-left: 0.4rem;
+  padding-right: 0.2rem;
 }
 
 //restaurant//
 #contaiter_restaurant {
   @include flexbox_center;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 3rem;
 }
 article {
   width: 95%;
@@ -104,7 +104,7 @@ article {
   @include card_restaurant;
 }
 .card_restaurant--img {
-  height: 200px;
+  height: 12rem;
   width: 100%;
   object-fit: cover;
   object-position: 50% 60%;
@@ -113,16 +113,16 @@ article {
 .container_new--message {
   display: flex;
   flex-direction: row-reverse;
-  margin-right: 15px;
+  margin-right: 1rem;
 }
 .text_new--message {
   position: absolute;
   text-align: center;
   font-size: 1em;
-  padding: 10px;
+  padding: 1rem;
   color: darken($tertiary, 40%);
   background: $tertiary;
-  border-radius: 3px;
+  border-radius: 0.3rem;
 }
 //text_card//
 .container_text--card {
@@ -132,7 +132,7 @@ article {
   color: $text_page_color;
 }
 .title_card--restaurant {
-  margin-top: 0px;
+  margin-top: 0rem;
   font-size: 1em;
 }
 .text_card--restaurant {
@@ -171,14 +171,14 @@ article {
 
     .container_btn--filter {
       width: 30%;
-      min-width: 230px;
+      min-width: 2.3rem;
       margin-left: -4%;
       margin-right: -4%;
     }
   }
   .article_title--restaurant {
     @include flexbox_center;
-    margin-bottom: 50px;
+    margin-bottom: 4rem;
   }
   .container_card--restaurant {
     display: flex;

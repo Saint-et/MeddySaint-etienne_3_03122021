@@ -40,13 +40,13 @@ header {
 
 .container_logo {
   display: flex;
-  height: 70px;
+  height: 5rem;
   color: #000;
   align-items: center;
 }
 
 .btn_return {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   margin-left: 10px;
   height: max-content;
   padding: 5px;
@@ -62,7 +62,7 @@ header {
   font-family: "Shrikhand", sans-serif;
   margin: auto;
   font-size: 2em;
-  margin-top: 15px;
+  margin-top: 1rem;
 }
 
 .location {
@@ -71,26 +71,26 @@ header {
   align-items: center;
   background: #EAEAEA;
   box-shadow: inset 0px 5px 5px #d9d9d9;
-  height: 50px;
-  font-size: 16px;
-  margin-left: -20px;
+  height: 4rem;
+  font-size: 1em;
+  margin-left: -1rem;
   font-weight: bold;
   color: #505050;
 }
 
 .fa-map-marker-alt {
-  margin-right: 20px;
+  margin-right: 1.5rem;
 }
 
 .picture_presentation {
   width: 100%;
-  height: 400px;
+  height: 40rem;
   object-fit: cover;
 }
 
 .container_menu {
   width: 90%;
-  padding: 10px;
+  padding: 1rem;
   max-width: 1440px;
 }
 
@@ -105,11 +105,11 @@ header {
   font-family: "Shrikhand", sans-serif;
   font-size: 1.5em;
   color: #000;
-  margin-left: -10px;
+  margin-left: -1rem;
 }
 
 .container_heart {
-  margin-top: 30px;
+  margin-top: 3rem;
   height: max-content;
 }
 .container_heart:hover > .heart .heart-empty {
@@ -129,7 +129,7 @@ header {
   font-size: 1.5em;
   transition: 1s;
   opacity: 1;
-  margin-right: -24px;
+  margin-right: -2.4rem;
 }
 
 .heart-full {
@@ -143,13 +143,13 @@ header {
 }
 
 section {
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
 .container_content--article {
   border-radius: 50px 50px 0px 0px;
   background: #ffff;
-  margin-top: -70px;
+  margin-top: -7rem;
   width: 100%;
   position: relative;
   display: flex;
@@ -161,23 +161,23 @@ section {
 }
 
 .content_article {
-  padding-top: 20px;
+  padding-top: 2rem;
 }
 
 .subtitle {
   color: #000;
   font-size: 0.8em;
-  padding-bottom: 5px;
+  padding-bottom: 0.5rem;
   display: flex;
   justify-content: flex-start;
-  margin-left: 0px;
+  margin-left: 0rem;
 }
 
 .underline {
   border-bottom: 3px solid #99e2d0;
   margin-right: 86%;
-  margin-left: 10px;
-  margin-bottom: 20px;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
 }
 
 article {
@@ -185,7 +185,7 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 article .load_1 {
   animation-duration: 550ms;
@@ -227,7 +227,7 @@ article .loading_slide {
 
 .list_menu {
   display: flex;
-  height: 65px;
+  height: 4rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -253,7 +253,7 @@ article .loading_slide {
 }
 
 .container_menu--title {
-  margin-left: 10px;
+  margin-left: 1rem;
   width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -261,7 +261,7 @@ article .loading_slide {
 }
 
 .list_menu--title {
-  margin-top: 5px;
+  margin-top: 0.5rem;
   font-weight: 600;
   font-size: 1em;
   overflow: hidden;
@@ -271,28 +271,28 @@ article .loading_slide {
 .list_menu--subtitle {
   font-weight: 400;
   font-size: 0.85em;
-  margin-top: 5px;
+  margin-top: 0.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .price {
   font-size: 0.85em;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   align-self: flex-end;
 }
 
 .container_main--btn {
   margin: auto;
-  margin-top: 50px;
+  margin-top: 5rem;
   display: flex;
   justify-content: center;
 }
 
 .main--btn {
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 6rem;
+  padding-right: 6rem;
   color: #ffff;
   font-weight: bold;
   padding-top: 15px;
@@ -311,14 +311,14 @@ article .loading_slide {
 
 @media all and (min-width: 769px) {
   .picture_presentation {
-    height: 500px;
+    height: 50rem;
     object-position: 50% 60%;
   }
 
   .container_content--article {
     border-radius: 50px 50px 0px 0px;
     background: #ffff;
-    margin-top: -50px;
+    margin-top: -5rem;
     width: 100%;
     position: relative;
     display: flex;
@@ -334,13 +334,13 @@ article .loading_slide {
 
   .content_article {
     width: 48%;
-    margin: 5px;
+    margin: 0.5rem;
   }
 }
 @media all and (min-width: 1075px) {
   .content_article {
     width: 32%;
-    margin: 5px;
+    margin: 0.5rem;
   }
 
   .menu {
@@ -348,13 +348,13 @@ article .loading_slide {
     justify-content: space-around;
     flex-wrap: wrap;
     margin: auto;
-    height: 400px;
+    height: 28rem;
   }
 }
 footer {
-  margin-top: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   background: #353535;
   display: flex;
   justify-content: center;
@@ -377,7 +377,7 @@ footer {
 }
 
 .footer_text {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   width: max-content;
   transition: 200ms 100ms ease-in-out;
 }
@@ -396,7 +396,7 @@ footer {
 }
 
 .icon_footer--hand {
-  font-size: 14px;
+  font-size: 1rem;
   transform: rotate(-45deg);
 }
 
@@ -404,7 +404,7 @@ footer {
   .title_footer {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
   }
 
   .footer_container--text {

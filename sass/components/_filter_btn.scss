@@ -8,11 +8,13 @@
     background: $ligh_grey_background;
     border-radius: 15px;
     transition: 200ms 100ms, background-color 200ms 130ms ease-in-out;
+    border: 2px solid $ligh_grey_background;
   
     &:hover {
       transform: scale(0.99);
       @include primary_lighten--background;
       @include color_shadow_border--darken;
+      border: 2px solid $primary;
     }
   
     &:hover > .icon_filter {

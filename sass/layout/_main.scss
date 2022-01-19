@@ -1,6 +1,6 @@
 main {
   background: $ligh_grey_background;
-  padding-bottom: 20px;
+  padding-bottom: 4rem;
 }
 //title-subtitle-botton//
 .byline {
@@ -161,8 +161,12 @@ nav {
 }
 //media_querie//
 @media all and (min-width: 769px) {
+  .main_title{
+    font-size: 1.4rem;
+  }
   .filter_title {
     @include flexbox_center;
+    font-size: 1.3rem;
   }
   .filter {
     display: flex;
@@ -179,6 +183,7 @@ nav {
   .article_title--restaurant {
     @include flexbox_center;
     margin-bottom: 4rem;
+    font-size: 1.3rem;
   }
   .container_card--restaurant {
     display: flex;

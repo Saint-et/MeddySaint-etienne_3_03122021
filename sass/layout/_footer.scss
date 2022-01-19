@@ -1,5 +1,4 @@
 footer {
-  margin-top: 4rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   background: $footer_background;
@@ -46,10 +45,12 @@ footer {
   .title_footer {
     @include flexbox_center;
     margin-bottom: 2rem;
+    font-size: 1.8rem;
   }
   .footer_container--text {
     @include flexbox_center;
     justify-content: space-around;
     flex-direction: row;
+    font-size: 1rem;
   }
 }

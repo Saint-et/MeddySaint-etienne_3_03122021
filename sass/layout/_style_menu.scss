@@ -25,7 +25,7 @@
 
 //heart//
 .container_heart {
-  margin-top: 3rem;
+  margin-top: 2rem;
   @include heart;
 }
 .heart-empty {
@@ -48,9 +48,6 @@
 //________________//
 
 //article//
-section {
-  margin-bottom: 5rem;
-}
 .container_content--article {
   border-radius: 50px 50px 0px 0px;
   background: $white;
@@ -58,6 +55,7 @@ section {
   width: 100%;
   position: relative;
   @include flexbox_center;
+  padding-bottom: 3rem;
 }
 //menu-container//
 .menu {
@@ -118,8 +116,10 @@ article {
   @include menu_btn;
   overflow: hidden;
   transition: 150ms 100ms ease-in-out;
+  border: 1px solid $ligh_grey_background;
 }
-.list_menu:hover {
+.list_menu:hover{
+  border: 1px solid $tertiary;
   transform: scale(1.04);
 }
 .container_menu--title {
@@ -164,9 +164,44 @@ article {
 //media_querie//
 @media all and (min-width: 769px) {
   .picture_presentation{
-    height: 50rem;
+    height: 30rem;
     object-position: 50% 60%;
   }
+  .container_title_and_heart{
+    margin-top: 2rem;
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: 0px 2px 5px $color_shadow_border;
+  }
+  .title_menu{
+    margin-left: 5rem;
+    font-size: 2rem;
+  }
+  .subtitle{
+    font-size: 0.9rem;
+  }
+  //heart//
+.container_heart {
+  margin-right: 5rem;
+  margin-top: 2rem;
+  @include heart;
+}
+.heart-empty {
+  color: $text_page_color;
+  font-size: 2rem;
+  transition: 1s;
+  opacity: 1;
+  margin-right: -33px;
+}
+.heart-full {
+  font-size: 2rem;
+  transition: 1s;
+  opacity: 0;
+  background: -webkit-linear-gradient($primary, $secondary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
   .container_content--article {
     border-radius: 50px 50px 0px 0px;
     background: $white;
@@ -175,11 +210,19 @@ article {
     position: relative;
     @include flexbox_center;
   }
+  article{
+    border-radius: 2.5rem;
+    padding: 1rem;
+    background: $ligh_grey_background;
+  }
   .menu {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: auto;
+  }
+  .list_menu{
+    background: $white;
   }
   .content_article {
     width: 45%;
@@ -199,7 +242,7 @@ article {
     margin: auto;
     // change height if you add more menu //
 
-    height: 28rem;
+    height: 30rem;
 
     //____________________________________//
   }
